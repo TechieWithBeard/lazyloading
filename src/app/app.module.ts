@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ClickLoadPageComponent } from './click-load-page/click-load-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClickLoadPageComponent,
   ],
   imports: [
     BrowserModule,
