@@ -8,7 +8,7 @@ import { ClickLoadPageComponent } from './click-load-page/click-load-page.compon
 @NgModule({
   declarations: [
     AppComponent,
-    ClickLoadPageComponent,
+    ClickLoadPageComponent
   ],
   imports: [
     BrowserModule,

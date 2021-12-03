@@ -19,6 +19,9 @@ export class ClickLoadPageComponent implements OnInit {
     {
       this.route.navigate(['/dynaload']);
     }
+    else if("bootstrap"){
+      this.route.navigate(['/loadBootstrap']);
+    }
 
 
   }
