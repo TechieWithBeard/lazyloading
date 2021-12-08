@@ -7,13 +7,14 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\""
   },
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && ng lint && ng test",
-        "pre-push": "ng build --aot true"
+      "pre-commit": "npm run prettier:check",
+      "pre-push": "ng build --aot true"
     }
   },
   "dependencies": {
@@ -46,6 +47,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.2",
     "protractor": "~7.0.0",
